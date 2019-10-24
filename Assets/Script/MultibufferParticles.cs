@@ -154,7 +154,7 @@ public class MultibufferParticles : MonoBehaviour
 		{
 			material.SetPass(0);
 			material.SetBuffer("particleBuffer", particleBuffers[i]);
-			Graphics.DrawProcedural(MeshTopology.Points, 1, particleCount);
+			Graphics.DrawProceduralNow(MeshTopology.Points, 1, particleCount);
 		}
 	}
 	
